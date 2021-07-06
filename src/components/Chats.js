@@ -38,7 +38,7 @@ export default function Chats() {
       axios.get(
         'https://api.chatengine.io/users/me/',
         { headers: { 
-          "project-id": process.env.REACT_APP_CHAT_ENGINE_ID,
+          "project-id": "8fded6e9-f897-449f-b53e-a00b57e06959",
           "user-name": user.email,
           "user-secret": user.uid
         }}
@@ -87,7 +87,7 @@ export default function Chats() {
 
       <ChatEngine 
         height='calc(100vh - 66px)'
-        projectID={process.env.REACT_APP_CHAT_ENGINE_ID}
+        projectID="8fded6e9-f897-449f-b53e-a00b57e06959"
         userName={user.email}
         userSecret={user.uid}
       />
