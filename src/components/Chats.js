@@ -59,7 +59,7 @@ export default function Chats() {
           axios.post(
             'https://api.chatengine.io/users/',
             formdata,
-            { headers: { "private-key": process.env.REACT_APP_CHAT_ENGINE_KEY }}
+            { headers: { "private-key": "cd8323a4-9b4c-4ee1-b0e7-164f320ea0aa" }}
           )
           .then(() => setLoading(false))
           .catch(e => console.log('e', e.response))
